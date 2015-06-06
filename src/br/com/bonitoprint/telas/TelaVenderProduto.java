@@ -29,34 +29,282 @@ public class TelaVenderProduto extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jPanelProdutos = new javax.swing.JLayeredPane();
+        jNomeProduto = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        jPesquisarVenda = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jComboProdutos = new javax.swing.JComboBox();
+        jConfirmarProd = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jQuantidadeProd = new javax.swing.JTextField();
+        jIncluirProd = new javax.swing.JButton();
+        jPanelCliente = new javax.swing.JLayeredPane();
+        jConfirmarCliente = new javax.swing.JButton();
+        jComboCliente = new javax.swing.JComboBox();
+        jNomeCliente = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jPesquisarCliente = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jPanelVenda = new javax.swing.JLayeredPane();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTableVenda = new javax.swing.JTable();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jDesconto = new javax.swing.JTextField();
+        jTotal = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("jLabel1");
+        jPanelProdutos.setBorder(javax.swing.BorderFactory.createTitledBorder("Produto"));
 
-        jTextField1.setText("jTextField1");
+        jLabel1.setText("Produto:");
+
+        jPesquisarVenda.setText("Pesquisar");
+
+        jLabel2.setText("Produtos Encontrados:");
+
+        jComboProdutos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jConfirmarProd.setText("Confirmar");
+
+        jLabel3.setText("Quantidade:");
+
+        jIncluirProd.setText("Incluir");
+
+        javax.swing.GroupLayout jPanelProdutosLayout = new javax.swing.GroupLayout(jPanelProdutos);
+        jPanelProdutos.setLayout(jPanelProdutosLayout);
+        jPanelProdutosLayout.setHorizontalGroup(
+            jPanelProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelProdutosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addGap(41, 41, 41)
+                .addGroup(jPanelProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelProdutosLayout.createSequentialGroup()
+                        .addGroup(jPanelProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jNomeProduto)
+                            .addComponent(jComboProdutos, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanelProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPesquisarVenda)
+                            .addComponent(jConfirmarProd))
+                        .addGap(15, 15, 15))
+                    .addGroup(jPanelProdutosLayout.createSequentialGroup()
+                        .addComponent(jQuantidadeProd, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46)
+                        .addComponent(jIncluirProd)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
+        jPanelProdutosLayout.setVerticalGroup(
+            jPanelProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelProdutosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jNomeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPesquisarVenda))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addGroup(jPanelProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jComboProdutos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jConfirmarProd)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addGroup(jPanelProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jQuantidadeProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jIncluirProd))
+                .addContainerGap())
+        );
+        jPanelProdutos.setLayer(jNomeProduto, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelProdutos.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelProdutos.setLayer(jPesquisarVenda, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelProdutos.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelProdutos.setLayer(jComboProdutos, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelProdutos.setLayer(jConfirmarProd, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelProdutos.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelProdutos.setLayer(jQuantidadeProd, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelProdutos.setLayer(jIncluirProd, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jPanelCliente.setBorder(javax.swing.BorderFactory.createTitledBorder("Cliente"));
+
+        jConfirmarCliente.setText("Confirmar");
+
+        jComboCliente.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jLabel5.setText("Clientes Encontrados:");
+
+        jPesquisarCliente.setText("Pesquisar");
+
+        jLabel4.setText("Cliente:");
+
+        javax.swing.GroupLayout jPanelClienteLayout = new javax.swing.GroupLayout(jPanelCliente);
+        jPanelCliente.setLayout(jPanelClienteLayout);
+        jPanelClienteLayout.setHorizontalGroup(
+            jPanelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelClienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5))
+                .addGap(41, 41, 41)
+                .addGroup(jPanelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jNomeCliente)
+                    .addComponent(jComboCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPesquisarCliente)
+                    .addComponent(jConfirmarCliente))
+                .addContainerGap())
+        );
+        jPanelClienteLayout.setVerticalGroup(
+            jPanelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelClienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jNomeCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPesquisarCliente))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
+                    .addGroup(jPanelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jComboCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jConfirmarCliente)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanelCliente.setLayer(jConfirmarCliente, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelCliente.setLayer(jComboCliente, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelCliente.setLayer(jNomeCliente, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelCliente.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelCliente.setLayer(jPesquisarCliente, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelCliente.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jPanelVenda.setBorder(javax.swing.BorderFactory.createTitledBorder("Produtos Selecionados"));
+
+        jTableVenda.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Codigo", "Descrição", "Valor Unitario", "Quantidade", "Valor"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(jTableVenda);
+
+        jLabel6.setText("Desconto:");
+
+        jLabel7.setText("Total:");
+
+        jButton1.setText("Finalizar Compra");
+
+        javax.swing.GroupLayout jPanelVendaLayout = new javax.swing.GroupLayout(jPanelVenda);
+        jPanelVenda.setLayout(jPanelVendaLayout);
+        jPanelVendaLayout.setHorizontalGroup(
+            jPanelVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelVendaLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 538, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelVendaLayout.createSequentialGroup()
+                .addGap(195, 195, 195)
+                .addComponent(jLabel6)
+                .addGap(18, 18, 18)
+                .addComponent(jDesconto, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(jLabel7)
+                .addGap(18, 18, 18)
+                .addComponent(jTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addGap(0, 42, Short.MAX_VALUE))
+        );
+        jPanelVendaLayout.setVerticalGroup(
+            jPanelVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelVendaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addGroup(jPanelVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7)
+                    .addComponent(jDesconto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1))
+                .addContainerGap())
+        );
+        jPanelVenda.setLayer(jScrollPane3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelVenda.setLayer(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelVenda.setLayer(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelVenda.setLayer(jDesconto, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelVenda.setLayer(jTotal, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanelVenda.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(279, Short.MAX_VALUE))
+                .addGap(24, 24, 24)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanelVenda)
+                    .addComponent(jPanelProdutos)
+                    .addComponent(jPanelCliente))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(263, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jPanelCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanelProdutos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanelVenda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(71, Short.MAX_VALUE))
         );
 
         pack();
@@ -98,7 +346,34 @@ public class TelaVenderProduto extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JComboBox jComboCliente;
+    private javax.swing.JComboBox jComboProdutos;
+    private javax.swing.JButton jConfirmarCliente;
+    private javax.swing.JButton jConfirmarProd;
+    private javax.swing.JTextField jDesconto;
+    private javax.swing.JButton jIncluirProd;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JTextField jNomeCliente;
+    private javax.swing.JTextField jNomeProduto;
+    private javax.swing.JLayeredPane jPanelCliente;
+    private javax.swing.JLayeredPane jPanelProdutos;
+    private javax.swing.JLayeredPane jPanelVenda;
+    private javax.swing.JButton jPesquisarCliente;
+    private javax.swing.JButton jPesquisarVenda;
+    private javax.swing.JTextField jQuantidadeProd;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTableVenda;
+    private javax.swing.JTextField jTotal;
     // End of variables declaration//GEN-END:variables
 }

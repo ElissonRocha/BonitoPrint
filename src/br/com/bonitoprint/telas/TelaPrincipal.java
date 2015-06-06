@@ -11,7 +11,7 @@ import br.com.bonitoprint.execao.UsuarioInexistenteException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
+//import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 import javax.swing.JOptionPane;
@@ -352,7 +352,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_CadastrarServicoActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        LocalDate hoje = LocalDate.now();
+//        LocalDate hoje = LocalDate.now();
         
         Date datasistema = new Date();
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
