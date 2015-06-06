@@ -281,15 +281,21 @@ public class TelaEstoque extends javax.swing.JFrame {
 
     private void DeletarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeletarActionPerformed
         // TODO add your handling code here:
-         String nome = CampoNome.getText();
-         ProdutoController pcontroller = new ProdutoController();
+          String nome = CampoNome.getText();
+          ProdutoController pcontroller = new ProdutoController();
+         
         try {
-            JOptionPane.showMessageDialog(rootPane, JOptionPane.CANCEL_OPTION);
             pcontroller.deletar(nome);
+            this.CampoAddQuantidade.setText("");
+            this.CampoNome.setText("");
+            this.CampoPesqNome.setText("");
+            this.CampoPreco.setText("");
+            this.CampoQuantidade.setText("");
+            ComboProduto.removeAllItems();
         }catch (ErroInternoException ex) {
-           JOptionPane.showMessageDialog(rootPane, ex);
+           JOptionPane.showMessageDialog(rootPane, ex.getMessage());
         }catch(UsuarioInexistenteException e){
-            
+           JOptionPane.showMessageDialog(rootPane, "Produto Inexistente"); 
         }
         
     }//GEN-LAST:event_DeletarActionPerformed

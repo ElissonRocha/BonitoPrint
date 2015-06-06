@@ -50,8 +50,8 @@ public class ProdutoController {
     public void atualizar(Produto produto) throws ErroInternoException{
         nproduto.atualizar(produto);
     }
-    public void deletar(Produto produto) throws ErroInternoException, UsuarioInexistenteException{
-        nproduto.deletar(produto);
+    public void deletar(String nome) throws ErroInternoException, UsuarioInexistenteException{
+        nproduto.deletar(nome);
     }
     
 }
