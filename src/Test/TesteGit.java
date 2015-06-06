@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.bonitoprint.entidades;
+
+package Test;
 
 /**
  *
- * @author Alexandre,Elisson e Vinicius
+ * @author ElissonRocha
  */
-public class Compra {
-    private String dia;
-    
+public class TesteGit {
     
 }
